@@ -1,0 +1,30 @@
+﻿  dateDriver.cpp
+  Phone.cpp
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(17): error C2084: function 'void Phone::setID(int)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(19): note: see previous definition of 'setID'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(20): error C2084: function 'char *Phone::getMake(void) const' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(20): note: see previous definition of 'getMake'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(23): error C2084: function 'void Phone::setMake(char *)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(21): note: see previous definition of 'setMake'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(26): error C2084: function 'char *Phone::getModel(void) const' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(22): note: see previous definition of 'getModel'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(29): error C2084: function 'void Phone::setModel(char *)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(23): note: see previous definition of 'setModel'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(32): error C2084: function 'double Phone::getPrice(void) const' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(24): note: see previous definition of 'getPrice'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(35): error C2084: function 'void Phone::setPrice(double)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(25): note: see previous definition of 'setPrice'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(38): error C2084: function 'char *Phone::getFeature(void) const' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(26): note: see previous definition of 'getFeature'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(41): error C2084: function 'void Phone::setFeature(char *)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(27): note: see previous definition of 'setFeature'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(44): error C2084: function 'PhoneDate Phone::getSoldDate(void) const' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(28): note: see previous definition of 'getSoldDate'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(47): error C2084: function 'void Phone::setSoldDate(PhoneDate)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(29): note: see previous definition of 'setSoldDate'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(50): error C2084: function 'PhoneDate Phone::getBuiltDate(void) const' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(30): note: see previous definition of 'getBuiltDate'
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.cpp(53): error C2084: function 'void Phone::setBuiltDate(PhoneDate)' already has a body
+  c:\users\cisco\desktop\c++\assignment 4\assignment 4\phone.h(31): note: see previous definition of 'setBuiltDate'
+  Generating Code...
+c:\users\cisco\desktop\c++\assignment 4\assignment 4\datedriver.cpp(10): error C4700: uninitialized local variable 'newDate' used

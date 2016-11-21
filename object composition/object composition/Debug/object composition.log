@@ -1,0 +1,4 @@
+﻿  TrsDate.cpp
+c:\users\cisco\desktop\c++\object composition\object composition\trsdate.cpp(42): warning C4018: '<': signed/unsigned mismatch
+  object composition.vcxproj -> C:\Users\Cisco\Desktop\C++\object composition\Debug\object composition.exe
+  object composition.vcxproj -> C:\Users\Cisco\Desktop\C++\object composition\Debug\object composition.pdb (Full PDB)
