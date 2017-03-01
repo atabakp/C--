@@ -3,14 +3,14 @@ int main()
 {
 	int student[10];
 
-	// Loop for initializing an array to 0
+	
 	for (int i = 0; i <= 9; i++)
 	{
 		student[i] = 0;
 	}
 
-	printf("%s\n", "Please Enter 10 Students Number ");
-	// Getting Student Number information
+	printf("%s\n", "Please Enter 10 Students Number(3 digit) ");
+	
 	for (int i = 0; i <= 9; i++)
 	{
 		while (true)
@@ -22,12 +22,12 @@ int main()
 			}
 			else
 			{
-				printf("%s\n", "Nooooo Please Enter 3 degits");
+				printf("%s\n", "eneter 3 digits");
 			}
 		}
 	}
 
-	// Showing Student Number information
+	
 	for (int i = 0; i <= 9; i++)
 	{
 		printf("Student %d of ID : ", i);

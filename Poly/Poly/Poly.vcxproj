@@ -147,7 +147,6 @@
     <ClCompile Include="EmailClient.cpp" />
     <ClCompile Include="Gameconsole.cpp" />
     <ClCompile Include="Gmail.cpp" />
-    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Messaging.cpp" />
     <ClCompile Include="MiltimediaMessaging.cpp" />
     <ClCompile Include="Mp3Player.cpp" />
