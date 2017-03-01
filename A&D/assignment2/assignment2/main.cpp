@@ -1,29 +1,16 @@
+#pragma once
 #include <iostream>
-#include <vector>
+#include "myVector.h"
+#include "myList.h"
+#include "myDeque.h"
+#include "myMap.h"
+#include "myMultiMap.h"
+#include "myMultiSet.h"
+#include "mySet.h"
+#include "myQueue.h"
+#include "myStack.h"
+#include "myPQueue.h"
 using namespace std;
-
-template < class T >
-void printVector(const std::vector< T > &vec);
-
-void demoVector();
-
-//demoLists();
-
-			//demoDeques();
-
-			//demoMaps();
-
-			//demoMultiMaps();
-
-			//demoSets();
-
-			//demoMultiSets();
-
-			//demoStacks();
-
-			//demoQueues();
-
-			//demoPriorityQueues();
 
 void main() {
 	int choice = 0;
@@ -48,116 +35,32 @@ void main() {
 			demoVector();
 			break;
 		case 2:
-			//demoLists();
+			demoList();
 			break;
 		case 3:
-			//demoDeques();
+			demoDeque();
 			break;
 		case 4:
-			//demoMaps();
+			demoMap();
 			break;
 		case 5:
-			//demoMultiMaps();
+			demoMultiMap();
 			break;
 		case 6:
-			//demoSets();
+			demoSet();
 			break;
 		case 7:
-			//demoMultiSets();
+			demoMultiSet();
 			break;
 		case 8:
-			//demoStacks();
+			demoStack();
 			break;
 		case 9:
-			//demoQueues();
+			demoQueue();
 			break;
 		case 10:
-			//demoPriorityQueues();
+			demoPQueue();
 			break;
 		}
 	}
-}
-void demoVector()
-{
-	vector <int> intVector;
-	int input;
-	vector<int>::iterator it;
-
-	int choice = 0;
-	while (choice >= 0 && choice <= 9)
-	{
-		cout << "1. Add an Element to the end of vector" << endl <<
-			"2. Add an element to the beginning of the vector" << endl <<
-			"3. Add an element to a specific location in the vector" << endl <<
-			"4. Print the vector" << endl <<
-			"5. Show Vector’s size" << endl <<
-			"6. Access a particular Element in the vector by using Iterator" << endl <<
-			"7. Access a Particular Element in the vector by using[] operator";
-
-		cout << "Please enter your choice (1 to 7): ";
-		cin >> choice;
-		switch (choice)
-		{
-		case 1:
-			cout << "Enter a number: ";
-			cin >> input;
-			intVector.push_back(input);
-			printVector(intVector);
-			break;
-		case 2:
-			cout << "Enter a number: ";
-			cin >> input;
-			intVector.insert(intVector.begin(), input);
-			printVector(intVector);
-			break;
-		case 3:
-			cout << "Enter a number: ";
-			cin >> input;
-			cout << "Enter position: ";
-			int pos;
-			while (pos > intVector.size())
-				cin >> pos;
-
-			it = intVector.begin();
-			for (int i = 0; i != pos; i++)
-				it++;
-			intVector.insert(it, input);
-			printVector(intVector);
-			break;
-		case 4:
-			printVector(intVector);
-			break;
-		case 5:
-			cout << "vector size is:" << intVector.size();
-			break;
-		case 6:
-			cout << "Enter position: ";
-			int pos;
-			while (pos > intVector.size())
-				cin >> pos;
-
-			it = intVector.begin();
-			for (int i = 0; i != pos; i++)
-				it++;
-			cout << *it;
-			break;
-		case 7:
-			cout << "Enter position: ";
-			int pos;
-			while (pos > intVector.size())
-				cin >> pos;
-			cout << intVector[pos];
-			break;
-		}
-	}
-}
-
-template < class T >
-void printVector(const std::vector< T > &vec)
-{
-	vector< T >::const_iterator p1;
-
-	for (p1 = vec.begin(); p1 != vec.end(); p1++)
-		cout << *p1 << ' ';
-	cout << endl;
 }

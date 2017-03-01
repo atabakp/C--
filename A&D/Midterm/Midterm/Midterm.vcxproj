@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FD6BD120-21A8-4204-8953-955EAF973226}</ProjectGuid>
+    <ProjectGuid>{1F3919CE-5D36-4EFC-B71E-77AAE58D8618}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>assignment2</RootNamespace>
+    <RootNamespace>Midterm</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,35 +142,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="myDeque.cpp" />
-    <ClCompile Include="myList.cpp" />
-    <ClCompile Include="myMap.cpp" />
-    <ClCompile Include="myMultiMap.cpp" />
-    <ClCompile Include="myMultiSet.cpp" />
-    <ClCompile Include="myPQueue.cpp" />
-    <ClCompile Include="myQueue.cpp" />
-    <ClCompile Include="mySet.cpp" />
-    <ClCompile Include="myStack.cpp" />
-    <ClCompile Include="myVector.cpp" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="myList.h" />
-    <ClInclude Include="myMap.h" />
-    <ClInclude Include="myMultiMap.h" />
-    <ClInclude Include="myMultiSet.h" />
-    <ClInclude Include="myPQueue.h" />
-    <ClInclude Include="myQueue.h" />
-    <ClInclude Include="mySet.h" />
-    <ClInclude Include="myStack.h" />
-    <ClInclude Include="myVector.h" />
-    <ClInclude Include="resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="myDeque.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="assignment2.rc" />
+    <ClCompile Include="Driver.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
