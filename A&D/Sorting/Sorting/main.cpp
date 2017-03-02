@@ -1,3 +1,13 @@
+//
+//  main.cpp
+//  sorting
+//
+//  Created by Atabak Pouya on 3/1/17.
+//  Copyright © 2017 Atabak Pouya. All rights reserved.
+//
+
+#include <iostream>
+
 #include <time.h>
 #include <iostream>
 
@@ -9,31 +19,32 @@ int partition(int[], int, int);
 void exch(int[], int, int);
 void bubbleSort(int a[], int lenght);
 void shell(int[], int);
-void bucket();
+void bucket(int[],int);
 void merge();
 void heap();
 void index();
 #define ARRAY_SIZE 20
 
-void main()
+int main()
 {
     int array[ARRAY_SIZE];
-
+    
     srand(time(NULL));
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
         array[i] = rand() % 100 + 10;
     }
-
+    
     for (int elem : array)
         cout << elem << ' ';
     cout << endl;
-
+    
     //insertion_sort(array, ARRAY_SIZE);
-
+    
     //quickSort(array, 0, 19);
     //bubbleSort(array, ARRAY_SIZE);
-    shell(array, 20);
+   // shell(array, 20);
+    bucket(array,20);
     for (int elem : array)
         cout << elem << ' ';
 }
@@ -41,11 +52,11 @@ void main()
 void insertion_sort(int arr[], int length)
 {
     int j, temp;
-
+    
     for (int i = 0; i < length; i++)
     {
         j = i;
-
+        
         while (j > 0 && arr[j] < arr[j - 1])
         {
             temp = arr[j];
@@ -119,17 +130,17 @@ void bubbleSort(int a[], int lenght)
 void shell(int arr[], int n)
 {
     int distance, i, j, temp;
-
+    
     for (distance = 3; distance > 0; distance /= 2)
-
+        
         for (i = distance; i < n; i++)
-
+            
             for (j = i - distance; j >= 0 && arr[j] > arr[j + distance]; j -= distance)
             {
                 temp = arr[j];
-
+                
                 arr[j] = arr[j + distance];
-
+                
                 arr[j + distance] = temp;
             }
 }
@@ -137,3 +148,22 @@ void shell(int arr[], int n)
 void tagSort(int a[])
 {
 }
+
+void bucket(int arr[], int n) {
+{
+        //Here range is [10,100]
+        int m = 101;
+    
+        int buckets[m];
+        for (int i = 0; i < m; ++i)
+            buckets[i] = 0;
+        
+        
+        for (int i = 0; i < n; ++i)
+            ++buckets[arr[i]];
+        
+        //Sort using insertion sort and concatenate
+        for (int i = 0, j = 0; j < m; ++j)
+            for (int k = buckets[j]; k > 0; --k)
+                arr[i++] = j;
+    }}
